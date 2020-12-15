@@ -32,7 +32,7 @@
                 </div>
                 <div class="meetup-agenda__item-col">{{ el.startsAt }} - {{ el.endsAt }}</div>
                 <div class="meetup-agenda__item-col">
-                  <h5 class="meetup-agenda__title" v-html="el.title"></h5>
+                  <h5 class="meetup-agenda__title">{{ el.title }}</h5>
                   <p v-if="el.type === 'talk'">
                     <span>{{ el.speaker }}</span><!--
                     --><span class="meetup-agenda__dot"></span><!--
