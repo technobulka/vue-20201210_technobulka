@@ -53,11 +53,11 @@ export default {
 
     remove(toast) {
       setTimeout(() => {
-        this.toasts.findIndex((el, index) => {
-          if (el == toast) {
-            this.toasts.splice(index, 1);
-          }
-        });
+        const index = this.toasts.findIndex((element) => element === toast);
+
+        if (~index) {
+          this.toasts.splice(index, 1);
+        }
       }, DELAY);
     },
   },
