@@ -1,6 +1,12 @@
 <template>
   <header class="header">
-    <h1>Meetups</h1>
+    <h1>
+      <router-link
+        :to="{ name: 'meetups' }"
+        class="router-link-exact-active router-link-active"
+        ><img src="/assets/logo.svg" alt="Meetups"
+      /></router-link>
+    </h1>
     <nav>
       <router-link :to="{ name: 'meetups' }">Митапы</router-link>
       <router-link :to="{ name: 'form' }">Создать митап</router-link>
@@ -79,7 +85,7 @@ export default {
   }
 
   .header nav a,
-  .header nav a + a{
+  .header nav a + a {
     margin-top: 0;
   }
 

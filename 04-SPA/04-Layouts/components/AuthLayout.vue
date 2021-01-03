@@ -1,7 +1,9 @@
 <template>
   <div class="page page_onboarding">
-    <h2>{{ title }}</h2>
-    <slot />
+    <div class="container">
+      <h1 class="page__title text-center">Вход</h1>
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -23,9 +25,5 @@ export default {
   max-width: 374px;
   width: 100%;
   margin: 0 auto;
-}
-
-.page.page_onboarding h2 {
-  text-align: center;
 }
 </style>

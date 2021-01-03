@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper bg-grey">
     <the-header />
 
     <main class="main">

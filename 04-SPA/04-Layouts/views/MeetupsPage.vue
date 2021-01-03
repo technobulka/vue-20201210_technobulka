@@ -1,7 +1,5 @@
 <template>
-  <div class="container">
-    <p>MeetupsPage</p>
-  </div>
+  <p>MeetupsPage</p>
 </template>
 
 <script>
