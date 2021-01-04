@@ -35,7 +35,9 @@ export default {
       immediate: true,
       handler(to) {
         for (const key of Object.keys(to.query)) {
-          this[key] = to.query[key];
+          if (Object.keys(this.$data).includes(key)) {
+            this[key] = to.query[key];
+          }
         }
       },
     },
