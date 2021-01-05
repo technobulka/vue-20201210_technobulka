@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header>
+    <header v-if="$route.name !== '404'">
       <nav>
         <ul>
           <li><router-link to="/page-a">/page-a</router-link></li>

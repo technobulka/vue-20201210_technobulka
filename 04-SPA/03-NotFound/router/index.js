@@ -18,5 +18,10 @@ export const router = new VueRouter({
       path: '/page-b',
       component: PageB,
     },
+    {
+      path: '*',
+      name: '404',
+      component: NotFoundPage,
+    },
   ],
 });
